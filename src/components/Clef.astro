@@ -1,0 +1,10 @@
+---
+// A small bass clef, drawn rather than taken from a font so it looks the same everywhere.
+const { size = 22 } = Astro.props;
+---
+<svg class="clef" width={size} height={size} viewBox="0 0 24 24" aria-hidden="true">
+  <circle cx="5.2" cy="9" r="2.7" fill="currentColor" />
+  <path d="M4.2 7.2C7 3.6 15.6 3.4 15.6 10.2c0 5.4-4.6 9.6-11.6 11.8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+  <circle cx="19.8" cy="7.6" r="1.35" fill="currentColor" />
+  <circle cx="19.8" cy="12.6" r="1.35" fill="currentColor" />
+</svg>

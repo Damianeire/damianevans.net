@@ -1,0 +1,175 @@
+/* One stylesheet for the whole site. Colours are set once here and swapped for dark mode. */
+
+:root {
+  --paper: #faf7f0;
+  --ink: #1f1c18;
+  --muted: #6b645a;
+  --rule: #ddd5c6;
+  --accent: #8c2f1e;
+  --tint: #f1ebdf;
+  --measure: 36rem;
+  --serif: Charter, 'Bitstream Charter', 'Iowan Old Style', 'Sitka Text', Cambria, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #191714;
+    --ink: #e9e3d7;
+    --muted: #a39b8d;
+    --rule: #3a352d;
+    --accent: #e39a7f;
+    --tint: #24211c;
+    color-scheme: dark;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1.1875rem/1.6 var(--serif);
+  font-kerning: normal;
+  font-variant-numeric: oldstyle-nums proportional-nums;
+}
+
+/* Layout: one reading column, with room in the right margin for side notes on wide screens. */
+.site-header, main, .site-footer {
+  max-width: calc(var(--measure) + 2rem);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 70rem) {
+  .site-header, main, .site-footer {
+    max-width: calc(var(--measure) + 18rem);
+    padding-right: 17rem;
+  }
+}
+
+/* Header */
+.site-header { padding-top: 2.25rem; padding-bottom: 0.5rem; }
+.name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1.5rem;
+  color: var(--ink);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+.name .clef { color: var(--accent); }
+.site-header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1.1rem;
+  margin-top: 0.6rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--rule);
+  font: 0.95rem/1.5 var(--sans);
+}
+.site-header nav a { color: var(--muted); text-decoration: none; }
+.site-header nav a:hover, .site-header nav a[aria-current] { color: var(--ink); }
+.site-header nav a[aria-current] { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 0.3em; }
+
+main { padding-top: 1.5rem; padding-bottom: 3rem; overflow-wrap: break-word; }
+
+/* Type */
+h1, h2, h3 { font-weight: normal; line-height: 1.25; }
+h1 { font-size: 2.1rem; margin: 0.5rem 0 1rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.45rem; margin: 2.4rem 0 0.6rem; }
+h3 { font-size: 1.15rem; font-style: italic; margin: 1.8rem 0 0.4rem; }
+p, ul, ol, table, figure, blockquote { margin: 0 0 1.1rem; }
+ul, ol { padding-left: 1.3rem; }
+li { margin-bottom: 0.3rem; }
+strong { font-weight: 600; }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+a:hover { text-decoration-thickness: 2px; }
+
+.intro { font-size: 1.3rem; line-height: 1.5; color: var(--ink); }
+.dateline, .small { font: 0.9rem/1.5 var(--sans); color: var(--muted); }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+blockquote {
+  margin-left: 0;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--rule);
+  color: var(--muted);
+}
+
+img, video { max-width: 100%; height: auto; }
+figure { margin-left: 0; margin-right: 0; }
+figcaption { font: 0.85rem/1.4 var(--sans); color: var(--muted); margin-top: 0.4rem; }
+audio { width: 100%; margin: 0.25rem 0 1rem; }
+
+code { font-size: 0.9em; background: var(--tint); padding: 0.05em 0.3em; border-radius: 3px; }
+
+/* Side notes: in the right margin on wide screens, inline and smaller on narrow ones. */
+.sidenote {
+  display: block;
+  margin: 0.4rem 0 1rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--rule);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  font-style: italic;
+  color: var(--muted);
+}
+@media (min-width: 70rem) {
+  .sidenote {
+    float: right;
+    clear: right;
+    width: 14rem;
+    margin: 0.3rem -16.5rem 1rem 0;
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+/* Tables, mostly the Galway gig list. Scrolls sideways on a phone rather than squashing. */
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font: 0.9rem/1.4 var(--sans);
+  font-variant-numeric: tabular-nums;
+}
+th, td { text-align: left; vertical-align: top; padding: 0.35rem 1rem 0.35rem 0; border-bottom: 1px solid var(--rule); }
+th { font-weight: 600; }
+td:first-child { white-space: nowrap; color: var(--muted); }
+
+/* Lists of things with a short description: projects, writing. */
+.entries { list-style: none; padding: 0; }
+.entries > li { margin-bottom: 1.6rem; }
+.entries h3 { margin: 0 0 0.2rem; font-style: normal; font-size: 1.2rem; }
+.entries p { margin-bottom: 0.3rem; }
+.entries .links { font: 0.9rem/1.5 var(--sans); }
+
+/* Footnotes */
+.footnotes { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: 0.9rem; color: var(--muted); }
+.footnotes h2 { font-size: 1rem; margin-top: 0; }
+sup a { text-decoration: none; }
+
+/* Footer */
+.site-footer { padding-bottom: 3rem; }
+.site-footer p {
+  margin: 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font: 0.9rem/1.5 var(--sans);
+  color: var(--muted);
+}
+.site-footer a { color: var(--muted); }
+
+@media (max-width: 30rem) {
+  body { font-size: 1.0625rem; }
+  h1 { font-size: 1.75rem; }
+  .intro { font-size: 1.15rem; }
+}

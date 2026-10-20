@@ -1,0 +1,39 @@
+---
+import Base from '../layouts/Base.astro';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+<Base>
+  <p class="intro">
+    I play the double bass. For about thirty years I've played jazz and Irish traditional music in Ireland and on tour, and
+    I spent a good part of that time researching the history of jazz in Ireland.
+  </p>
+  <p>
+    I have a PhD in jazz studies (2016) from TU Dublin and lectured at University College Dublin. These days I coordinate an
+    alternative education centre, and I also build small tools, mostly for musicians, with Claude Code.
+    <span class="sidenote">Most of them are Obsidian plugins, because that's where I keep my tunes.</span>
+  </p>
+
+  <h2>On this site</h2>
+  <ul class="entries">
+    <li>
+      <h3><a href={`${base}/music/`}>Music</a></h3>
+      <p>Who I've played with and what I've recorded.</p>
+    </li>
+    <li>
+      <h3><a href={`${base}/writing/`}>Writing &amp; Research</a></h3>
+      <p>Jazz in Ireland from 1919 on, my PhD, the Documenting Jazz conferences, and a few other things.</p>
+    </li>
+    <li>
+      <h3><a href={`${base}/galway-jazz-club/`}>Galway Jazz Club</a></h3>
+      <p>The club Lorraine and I ran from 2004 to 2007, with every headliner I have a record of.</p>
+    </li>
+    <li>
+      <h3><a href={`${base}/projects/`}>Projects</a></h3>
+      <p>Tuners, players, tune finders and other tools I've built. All free, all on GitHub.</p>
+    </li>
+    <li>
+      <h3><a href={`${base}/about/`}>About</a></h3>
+      <p>A short bio and how to get in touch.</p>
+    </li>
+  </ul>
+</Base>

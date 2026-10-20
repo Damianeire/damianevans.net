@@ -1,0 +1,14 @@
+---
+// Layout for the Markdown pages. Front matter: title (required), description,
+// intro (a line under the heading), date (shown as "Written <date>").
+import Base from './Base.astro';
+const { frontmatter } = Astro.props;
+---
+<Base title={frontmatter.title} description={frontmatter.description}>
+  <article>
+    <h1>{frontmatter.title}</h1>
+    {frontmatter.intro && <p class="intro">{frontmatter.intro}</p>}
+    {frontmatter.date && <p class="dateline">Written {frontmatter.date}</p>}
+    <slot />
+  </article>
+</Base>
