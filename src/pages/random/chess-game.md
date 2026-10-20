@@ -5,9 +5,13 @@ description: An annotated game from the 2020 Irish Chess Union All Play All (120
 date: July 2021
 ---
 
-This game comes from the first (and only) over-the-board tournament I played, in January 2020. It was game seven of nine in a five-day all-play-all, two games a day with one bye. Time control was 75 minutes plus 30 seconds a move, and this one lasted almost three hours.
+This game comes from the first ever over-the-board tournament I played, in January 2020. It was game seven of nine in a five-day all-play-all, two games a day with one bye. Time control was 75 minutes plus 30 seconds a move, and this one lasted almost three hours.
 
-To follow along on a board, [open the game on Lichess](https://lichess.org/aFZ84IW8). Or, for blindfold practice, paste that link into [PGN Speak](https://pgn.damianevans.net) and listen to it.
+<div class="board">
+  <iframe src="https://lichess.org/embed/game/aFZ84IW8?theme=auto&bg=auto" title="The game on an interactive board, from Lichess" loading="lazy" allowtransparency="true"></iframe>
+</div>
+
+Step through the moves on the board above, or [open the game on Lichess](https://lichess.org/aFZ84IW8). For blindfold practice, paste that link into [PGN Speak](https://pgn.damianevans.net) and listen to it instead.
 
 **White:** Damian Evans · **Black:** Ciaran O'Reilly · **Result:** 1–0 · Caro-Kann Defence, Two Knights Attack
 
@@ -49,4 +53,4 @@ I now play 1. d4, but at the time it was 1. e4 every game. My theory was next to
 
 ---
 
-My coach [Marko Makaj](https://lichess.org/coach/MarkoMakaj) called this (especially after Nf4) at least a 2100 game. I got lucky with my hand playing a different move from the one I'd chosen, but I converted the advantage well and was really pleased with it. Ciaran and I had a great post-mortem too. My best over-the-board game to date.
+My coach [Marko Makaj](https://lichess.org/coach/MarkoMakaj) called this (especially after Nf4) at least a 2100 game. I got lucky with my hand playing a different move from the one I'd chosen, but I converted the advantage well and was really pleased with it. Ciaran and I had a great post-mortem too. My best over-the-board game up to that date.

@@ -173,3 +173,7 @@ sup a { text-decoration: none; }
   h1 { font-size: 1.75rem; }
   .intro { font-size: 1.15rem; }
 }
+
+/* An embedded Lichess board, kept at Lichess's own proportions at any width. */
+.board { margin: 0 0 1.1rem; }
+.board iframe { display: block; width: 100%; aspect-ratio: 600 / 397; border: 0; }
