@@ -2,7 +2,7 @@
 layout: ../layouts/Page.astro
 title: Projects
 description: Free tools for musicians and chess players built by Damian Evans, mostly as Obsidian plugins.
-intro: Small tools I built because I wanted them. Most are for learning and playing traditional music, and most are plugins for Obsidian, the notes app where I keep my tunes. All are free and open source, and I built them with Claude Code.
+intro: I've always been into programming of sorts. From my Commodore 64 BASIC days. I never made anything significant, but I think my first utilities were DOC batch files. Fast forward to 2010 or so and my first Mac, then to Keyboard Maestro, and me hacking together automations. I even had a small business made around one. Now Claude lets me build small tools just for me. Most are plugins for Obsidian which I use for learning and playing traditional Irish music.
 ---
 
 <ul class="entries">
