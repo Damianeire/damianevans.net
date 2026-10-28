@@ -60,6 +60,6 @@ Reads a chess game aloud, move by move, for practising blindfold chess. Paste in
 
 A web app for drilling the maths of Texas Hold'em: outs, equity, pot odds. Every number on screen is worked out live, and each one can show its working.
 
-<p class="links"><a href="https://github.com/Damianeire/poker-odds-app">Source on GitHub</a></p>
+<p class="links"><a href="https://damianeire.github.io/poker-odds-app/">Try it</a> · <a href="https://github.com/Damianeire/poker-odds-app">Source</a></p>
 </li>
 </ul>
