@@ -6,7 +6,7 @@ description: A short bio of Damian Evans, double bassist and researcher, and how
 
 For most of my career, I've been a freelance double bassist. The Covid pandemic, and not being able to get a mortgage as a self-employed musician, meant I moved to a full-time job in 2022. Initially I worked as a Music Development Officer for Music Generation Mayo, and then, staying in MSLETB, as a Youthreach Co-ordinator.
 
-I am from Perth, Western Australia, came to Ireland in 1997 and spent most of that time working as a jazz and traditional musician ever since.
+I am from Perth, Western Australia, and came to Ireland in 1997. I've spent most of my time here working as a jazz and traditional musician.
 
 In jazz I've led my own trio, co-led the Boylan/Buckley/Evans Trio, and played with visiting artists including Terell Stafford, Jonathan Kreisberg, Tim Warfield and Soweto Kinch, and with fellow Australians Jamie Oehlers and Paul Williamson. In traditional music I've toured with Alan Kelly, Arty McGlynn and Seán Keane, and recorded with Sharon Shannon and Gerry O'Connor, among others. I've also toured India with Honor Heffernan, the Dominican Republic with Emilie Conway, and Ireland and Portugal with Chad Dughi.
 
