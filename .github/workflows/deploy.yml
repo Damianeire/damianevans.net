@@ -19,9 +19,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ASTRO_TELEMETRY_DISABLED: 1
-      # The site is served from damianeire.github.io/damianevans.net until the
-      # domain points here. At go-live, delete this line so it builds for the root.
-      SITE_BASE: /damianevans.net
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
