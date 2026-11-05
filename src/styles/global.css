@@ -147,8 +147,8 @@ td:first-child { white-space: nowrap; color: var(--muted); }
 
 /* Lists of things with a short description: projects, writing. */
 .entries { list-style: none; padding: 0; }
-.entries > li { margin-bottom: 1.6rem; }
-.entries h3 { margin: 0 0 0.2rem; font-style: normal; font-size: 1.2rem; }
+.entries > li { margin-bottom: 2.2rem; }
+.entries h3 { margin: 0 0 0.35rem; font-style: normal; font-weight: 600; font-size: 1.35rem; }
 .entries p { margin-bottom: 0.3rem; }
 .entries .links { font: 0.9rem/1.5 var(--sans); }
 
